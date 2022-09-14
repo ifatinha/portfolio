@@ -1,0 +1,101 @@
+.formacao {
+    background-color: #141414;
+    color           : #ffffff;
+}
+
+.formacao-container {
+    display              : grid;
+    grid-template-columns: 1fr 2fr;
+    gap                  : 100px;
+    padding              : 40px 20px;
+}
+
+.subtitulo {
+    color: #000000;
+}
+
+.formacao-container .texto-paragrafo {
+    color: #a3a3a3;
+}
+
+.formacao-container strong {
+    color: #ffffff;
+}
+
+.formacao-faculdades {
+    display      : flex;
+    flex-wrap    : wrap;
+    gap          : 20px;
+    margin-bottom: 60px;
+}
+
+.faculdade {
+    background-color: #000000;
+    border-radius   : 4px;
+    display         : flex;
+    flex-direction  : column;
+    flex            : 1;
+    padding         : 20px;
+}
+
+.faculdade-tipo {
+    color         : #a3a3a3;
+    font-size     : .875rem;
+    margin-bottom : 10px;
+    text-transform: uppercase;
+}
+
+.faculdade-curso {
+    flex         : 1;
+    font-size    : 1.125rem;
+    line-height  : 1.4;
+    margin-bottom: 40px;
+    position     : relative;
+}
+
+.faculdade-curso::before {
+    background: linear-gradient(#b6f829, #67dd0a);
+    content   : "";
+    display   : block;
+    height    : 20px;
+    left      : -24px;
+    position  : absolute;
+    width     : 4px;
+}
+
+.faculdade-instituicao {
+    color    : #a3a3a3;
+    font-size: 1.125rem;
+}
+
+.formacao-extra h3 {
+    color         : #8f8f8f;
+    font-size     : 0.875rem;
+    line-height   : 1.4;
+    margin-bottom : 20px;
+    position      : relative;
+    text-transform: uppercase;
+}
+
+.formacao-extra h3::before {
+    content : "";
+    display : block;
+    height  : 24px;
+    left    : -36px;
+    position: absolute;
+    top     : -4px;
+    width   : 24px;
+}
+
+.cursos h3::before {
+    background: url("/images/cursos.svg") no-repeat center center;
+}
+
+.idiomas h3::before {
+    background: url("/images/idiomas.svg") no-repeat center center;
+}
+
+
+.cursos {
+    margin-bottom: 60px;
+}

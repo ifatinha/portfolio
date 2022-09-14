@@ -3,7 +3,6 @@
     display              : grid;
     gap                  : 100px;
     grid-template-columns: 1fr 2fr;
-    padding              : 40px 20px;
 }
 
 .introducao h1 {
