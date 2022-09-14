@@ -88,13 +88,12 @@
 }
 
 .cursos h3::before {
-    background: url("/images/cursos.svg") no-repeat center center;
+    background: url("/images/open-book.png") no-repeat center center;
 }
 
 .idiomas h3::before {
-    background: url("/images/idiomas.svg") no-repeat center center;
+    background: url("/images/translate.png") no-repeat center center;
 }
-
 
 .cursos {
     margin-bottom: 60px;
