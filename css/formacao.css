@@ -8,10 +8,22 @@
     grid-template-columns: 1fr 2fr;
     gap                  : 100px;
     padding              : 40px 20px;
+    position             : relative;
 }
 
-.subtitulo {
-    color: #000000;
+.formacao-container::after {
+    background: url("../images/detalhe.svg") no-repeat center;
+    bottom    : -50px;
+    content   : "";
+    display   : block;
+    height    : 100px;
+    position  : absolute;
+    width     : 130px;
+}
+
+.formacao-container .subtitulo {
+    color    : #000000;
+    max-width: 5ch;
 }
 
 .formacao-container .texto-paragrafo {
@@ -87,6 +99,16 @@
     width   : 24px;
 }
 
+.formacao-extra li {
+    font-size    : 1.125rem;
+    line-height  : 1.1;
+    margin-bottom: 20px;
+}
+
+.formacao-extra span {
+    color: #8f8f8f;
+}
+
 .cursos h3::before {
     background: url("/images/open-book.png") no-repeat center center;
 }
@@ -97,4 +119,26 @@
 
 .cursos {
     margin-bottom: 60px;
+}
+
+.cursos li {
+    display        : flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .formacao-container {
+        gap                  : 40px;
+        grid-template-columns: 1fr;
+        padding              : 50px 4%;
+    }
+
+    .formacao .subtitulo {
+        color: #ffffff;
+    }
+
+    .formacao-extra h3::before {
+        margin-bottom: 10px;
+        position     : initial;
+    }
 }
