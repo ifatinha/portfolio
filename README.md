@@ -28,12 +28,12 @@ Este é o meu portfólio pessoal, desenvolvido com HTML, CSS e SASS. O objetivo 
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-portfolio.git
+   git clone [https://github.com/seu-usuario/seu-portfolio](https://github.com/ifatinha/portfolio-website.git)
    ```
 
 2. **Navegue até o diretório do projeto:**
     ```bash
-   git clone https://github.com/ifatinha/portfolio-website
+   cd portfolio-website
    ```
 
 3. **Instale as dependências do SASS (se necessário):**
