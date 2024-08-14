@@ -51,11 +51,6 @@ Este é o meu portfólio pessoal, desenvolvido com HTML, CSS e SASS. O objetivo 
     open index.html
     ```
 
-4. **Abra o arquivo index.html em um navegador para visualizar o portfólio.**
-    ```
-    open index.html
-    ```
-
 ## 📖 Como Contribuir
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar o projeto.
@@ -87,5 +82,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 📧 Contato
 
-Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem pelo `[linkedin]https://www.linkedin.com/in/ifatima14/` ou por e-mail: `fferreira913@gmail.com`.
+Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem pelo `[linkedin](https://www.linkedin.com/in/ifatima14/)` ou por e-mail: `(fferreira913@gmail.com)`.
 
