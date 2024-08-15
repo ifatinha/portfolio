@@ -168,13 +168,18 @@ a {
   gap: 10px;
 }
 .header-menu a {
-  background-color: darkcyan;
   font-family: "Fira Sans", sans-serif;
   font-size: 1.125rem;
   display: inline-block;
   line-height: 1.3;
   padding: 10px 20px;
+  position: relative;
   text-align: center;
+  transition: all 0.3s ease-out;
+}
+.header-menu a:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
 }
 
 /*# sourceMappingURL=main.css.map */
