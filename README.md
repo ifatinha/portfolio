@@ -1,6 +1,6 @@
 # Portfólio Pessoal
 
-Este é o meu portfólio pessoal, desenvolvido com HTML, CSS e SASS. O objetivo deste projeto é exibir meus trabalhos e habilidades em desenvolvimento web, incluindo projetos realizados e tecnologias que domino.
+Este é um portfólio pessoal, desenvolvido com HTML, CSS e SASS. O objetivo deste projeto é exibir meus trabalhos e habilidades em desenvolvimento web, incluindo projetos realizados e tecnologias que domino.
 
 ## 🚀 Tecnologias Utilizadas
 

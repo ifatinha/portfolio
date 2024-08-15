@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.subtitulo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-word;
+  max-width: 4ch;
+}
+@media screen and (max-width: 799px) {
+  .subtitulo {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+.experiencia-texto {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #525252;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+}
+
+.texto-paragrafo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #525252;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+}
+@media screen and (max-width: 799px) {
+  .texto-paragrafo {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.25rem;
+  }
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 2%;
+}
+@media screen and (max-width: 799px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+  }
+}
+.header-menu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.header-menu a {
+  background-color: darkcyan;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.125rem;
+  display: inline-block;
+  line-height: 1.3;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+@use "sass:map";
+@use "../util/util";
+@use "../global/typography";
+@use "../global/colors";
+@use "../util/queries";
+
+.container {
+   margin   : 0 auto;
+   max-width: 1200px;
+   padding  : 40px 20px;
+   width    : 100%;
+}
+
+.subtitulo {
+   @include typography.typography-01(128);
+
+   line-height   : 1;
+   text-transform: uppercase;
+   word-break    : break-word;
+   max-width     : 4ch;
+
+   @include util.devices(m) {
+      @include typography.typography-01(48);
+      text-transform: capitalize;
+      max-width     : initial !important;
+   }
+}
+
+.experiencia-texto {
+   @include typography.typography-01(24);
+
+   color        : map-get($map: colors.$theme-color, $key: --granite);
+   font-size    : 1.5rem;
+   line-height  : 1.33;
+   margin-bottom: 60px;
+   max-width    : 40ch;
+}
+
+.texto-paragrafo {
+   @include typography.typography-01(24);
+
+   color        : map-get($map: colors.$theme-color, $key: --granite);
+   font-size    : 1.5rem;
+   line-height  : 1.33;
+   margin-bottom: 60px;
+   max-width    : 40ch;
+
+   @include util.devices(m) {
+      @include typography.typography-01(20);
+   }
+}
