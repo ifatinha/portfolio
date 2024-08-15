@@ -1,12 +1,11 @@
 @use "../global/colors";
 @use "../global/typography";
 @use "../util/util";
+@use "../global/mixins";
 
 .experiencia {
-    display              : grid;
-    grid-template-columns: 1fr 2fr;
-    gap                  : 100px;
-    padding              : 40px 20px;
+    @include mixins.display-grid();
+    padding: 40px 20px;
 
     .subtitulo {
         color: map-get($map: colors.$theme-color, $key: --alabaster);

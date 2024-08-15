@@ -1,0 +1,157 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/typography";
+@use "../util/queries";
+
+.formacao {
+    background-color: map-get($map: colors.$theme-color, $key: --eclipse);
+    color           : map-get($map: colors.$theme-color, $key: --pure-white);
+
+    &-container {
+        @include mixins.display-grid();
+        padding : 40px 20px;
+        position: relative;
+
+        &::after {
+            background: url("/assets/images/detalhe.svg") no-repeat center;
+            bottom    : +50px;
+            content   : "";
+            display   : block;
+            height    : 100px;
+            position  : absolute;
+            width     : 130px;
+
+            @include queries.devices-t-and-m() {
+                bottom: -50px;
+            }
+        }
+
+        @include queries.devices-t-and-m() {
+            gap                  : 40px;
+            grid-template-columns: 1fr;
+            padding              : 50px 4%;
+        }
+    }
+
+    .subtitulo {
+        color: map-get($map: colors.$theme-color, $key: --absolute-black);
+
+        @include queries.devices-t-and-m() {
+            color: map-get($map: colors.$theme-color, $key: --pure-white);
+        }
+    }
+
+    &-container .texto-paragrafo {
+        color: map-get($map: colors.$theme-color, $key: --pewter);
+    }
+
+    &-container strong {
+        color: map-get($map: colors.$theme-color, $key: --pure-white);
+    }
+
+    &-faculdades {
+        display      : flex;
+        flex-wrap    : wrap;
+        gap          : 20px;
+        margin-bottom: 60px;
+    }
+}
+
+.faculdade {
+    background-color: map-get($map: colors.$theme-color, $key: --absolute-black);
+    border-radius   : 4px;
+    display         : flex;
+    flex            : 1;
+    flex-direction  : column;
+    padding         : 20px;
+
+    &-tipo {
+        @include typography.typography-01(14);
+        color         : map-get($map: colors.$theme-color, $key: --pewter);
+        margin-bottom : 10px;
+        text-transform: uppercase;
+    }
+
+    &-curso {
+        @include typography.typography-01(18);
+        flex         : 1;
+        line-height  : 1.4;
+        margin-bottom: 40px;
+        position     : relative;
+
+        &::before {
+            background: linear-gradient(#b6f829, #67dd0a);
+            content   : "";
+            display   : block;
+            height    : 20px;
+            left      : -24px;
+            position  : absolute;
+            width     : 4px;
+        }
+    }
+
+    &-instituicao {
+        @include typography.typography-01(18);
+        color: map-get($map: colors.$theme-color, $key: --pewter);
+    }
+}
+
+.formacao-extra {
+
+    h3 {
+        @include typography.typography-01(14);
+        color         : map-get($map: colors.$theme-color, $key: --stone-gray);
+        line-height   : 1.4;
+        margin-bottom : 20px;
+        position      : relative;
+        text-transform: uppercase;
+
+        &::before {
+            content : "";
+            display : block;
+            height  : 24px;
+            left    : -36px;
+            position: absolute;
+            top     : -3px;
+            width   : 24px;
+
+            @include queries.devices-t-and-m() {
+                margin-bottom: 10px;
+                position     : initial;
+            }
+        }
+    }
+
+    li {
+        @include typography.typography-01(18);
+        line-height  : 1.1;
+        margin-bottom: 20px;
+    }
+
+    span {
+        color: map-get($map: colors.$theme-color, $key: --stone-gray);
+    }
+}
+
+.cursos {
+    margin-bottom: 60px;
+
+    h3 {
+        &::before {
+            background: url("/assets/images/open-book.png") no-repeat center;
+        }
+    }
+
+    li {
+        display        : flex;
+        justify-content: space-between;
+    }
+}
+
+.idiomas {
+    h3 {
+        &::before {
+            background: url("/assets/images/translate.png") no-repeat center center;
+        }
+    }
+}

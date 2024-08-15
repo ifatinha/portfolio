@@ -3,3 +3,9 @@
     display        : flex;
     justify-content: $justify-content;
 }
+
+@mixin display-grid() {
+    display              : grid;
+    grid-template-columns: 1fr 2fr;
+    gap                  : 100px;
+}
