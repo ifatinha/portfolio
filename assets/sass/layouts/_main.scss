@@ -1,0 +1,79 @@
+@use "../global/typography";
+@use "../global/colors";
+@use "../util/util";
+
+.introducao {
+    align-items          : center;
+    display              : grid;
+    gap                  : 100px;
+    grid-template-columns: 1fr 2fr;
+
+    @include util.devices(t) {
+        gap                  : 40px;
+        grid-template-columns: 1fr 1fr;
+        margin-top           : 20px;
+        text-align           : center;
+    }
+
+    @include util.devices(m) {
+        grid-template-columns: 1fr;
+        text-align           : center;
+    }
+
+    img {
+        @include util.devices(m) {
+            display: none;
+        }
+    }
+
+    h1 {
+        @include typography.typography-01(72);
+        line-height  : 1.125;
+        margin-bottom: 30px;
+        position     : relative;
+
+        @include util.devices(t) {
+            @include typography.typography-01(48);
+        }
+
+        @include util.devices(m) {
+            @include typography.typography-01(38);
+        }
+
+        &::before {
+            background: url("/assets/images/detalhe.svg") no-repeat center;
+            content   : "";
+            display   : block;
+            height    : 100px;
+            left      : -40px;
+            position  : absolute;
+            top       : -15px;
+            width     : 130px;
+            z-index   : -1;
+
+            @include util.devices(t) {
+                height: 10px;
+                left  : 0;
+                width : 30px;
+            }
+
+            @include util.devices(m) {
+                left: 180px;
+            }
+        }
+    }
+
+    p {
+        @include typography.typography-01(24);
+        color: map-get($map: colors.$theme-color, $key: --granite);
+
+        @include util.devices(t) {
+            @include typography.typography-01(18);
+        }
+
+        @include util.devices(m) {
+            @include typography.typography-01(16);
+        }
+    }
+
+}
