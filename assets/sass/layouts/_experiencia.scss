@@ -1,0 +1,93 @@
+@use "../global/colors";
+@use "../global/typography";
+@use "../util/util";
+
+.experiencia {
+    display              : grid;
+    grid-template-columns: 1fr 2fr;
+    gap                  : 100px;
+    padding              : 40px 20px;
+
+    .subtitulo {
+        color: map-get($map: colors.$theme-color, $key: --alabaster);
+
+        @include util.devices-t-and-m() {
+            color: map-get($map: colors.$theme-color, $key: --eclipse);
+        }
+    }
+
+    &-texto strong {
+        color: map-get($map: colors.$theme-color, $key: --eclipse);
+    }
+
+    @include util.devices-t-and-m() {
+        gap                  : 40px;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.empresa {
+    background-color     : map-get($map: colors.$theme-color, $key: --fog);
+    border-radius        : 5px;
+    display              : grid;
+    gap                  : 10px 20px;
+    grid-template-columns: 1fr 1fr;
+    margin               : 20px 0;
+    padding              : 20px;
+    position             : relative;
+
+    @include util.devices(m) {
+        grid-template-columns: 1fr;
+    }
+
+    &::before {
+        background: linear-gradient(#b6f829, #67dd0a);
+        content   : "";
+        display   : block;
+        height    : 20px;
+        left      : -4px;
+        position  : absolute;
+        top       : 20px;
+        width     : 4px;
+    }
+
+    &-ano {
+        @include typography.typography-01(14);
+
+        color     : map-get($map: colors.$theme-color, $key: --granite);
+        left      : -100px;
+        position  : absolute;
+        text-align: right;
+        top       : 23px;
+        width     : 80px;
+
+        @include util.devices(t) {
+            order     : 1;
+            position  : initial;
+            text-align: center;
+            width     : initial;
+        }
+    }
+
+    &-titulo {
+        @include typography.typography-01(18);
+        font-weight: bolder;
+        line-height: 1.1;
+    }
+
+    &-habilidades {
+        align-content: flex-start;
+        display      : flex;
+        flex-wrap    : wrap;
+        gap          : 10px;
+
+        li {
+            @include typography.typography-01(14);
+            background-color: map-get($map: colors.$theme-color, $key: --pure-white);
+            border-radius   : 4px;
+            line-height     : 1.4;
+            padding         : 5px 10px;
+        }
+    }
+}

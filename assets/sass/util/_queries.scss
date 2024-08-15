@@ -4,13 +4,13 @@ $t-device: 760px;
 $m-device: 450px;
 
 @mixin devices($size) {
-   @if $size == l {
+   @if $size==l {
       @media screen and (min-width: $l-device) {
          @content;
       }
    }
 
-   @else if $size == t {
+   @else if $size==t {
       @media screen and (min-width: $t-device) and (max-width: ($l-device - 1px)) {
          @content;
       }
@@ -20,5 +20,16 @@ $m-device: 450px;
       @media screen and (max-width: ($t-device - 1px)) {
          @content;
       }
+   }
+}
+
+@mixin devices-t-and-m {
+
+   @include devices(t) {
+      @content;
+   }
+
+   @include devices(m) {
+      @content;
    }
 }

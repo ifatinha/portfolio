@@ -32,12 +32,8 @@
         margin-bottom: 30px;
         position     : relative;
 
-        @include util.devices(t) {
+        @include util.devices-t-and-m() {
             @include typography.typography-01(48);
-        }
-
-        @include util.devices(m) {
-            @include typography.typography-01(38);
         }
 
         &::before {
@@ -67,12 +63,8 @@
         @include typography.typography-01(24);
         color: map-get($map: colors.$theme-color, $key: --granite);
 
-        @include util.devices(t) {
+        @include util.devices-t-and-m() {
             @include typography.typography-01(18);
-        }
-
-        @include util.devices(m) {
-            @include typography.typography-01(16);
         }
     }
 
