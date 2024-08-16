@@ -11,17 +11,14 @@ Este é um portfólio pessoal, desenvolvido com HTML, CSS e SASS. O objetivo des
 ## 📂 Estrutura do Projeto
 
 - `index.html`: Página principal do portfólio.
-- `about.html`: Página sobre mim e minha trajetória.
-- `projects.html`: Página com detalhes dos projetos realizados.
-- `contact.html`: Página de contato.
-- `assets/`: Pasta contendo imagens e outros arquivos estáticos.
-- `css/`: Pasta onde o CSS gerado pelo SASS é armazenado.
-- `js/`: Pasta para arquivos JavaScript, se aplicável.
-- `scss/`: Pasta para arquivos SASS, organizada da seguinte forma:
-  - `config/`: Configurações de variáveis e mixins.
-  - `pages/`: Estilos específicos para cada página.
-  - `util/`: Estilos utilitários e helpers.
-  - `main.scss`: Arquivo principal que importa todos os outros arquivos SASS.
+- `assets/`: Pasta contendo arquivos estáticos.
+  - css/`: Pasta onde o CSS gerado pelo SASS é armazenado.
+  - scss/`: Pasta para arquivos SASS, organizada da seguinte forma:
+    - `base/`: Reset de estilos.
+    - `global/`: Estilos genêricos, cores, mixins e tipografias.
+    - `layouts/`: Estilos das sessões da página.
+    - `util/`: Estilos utilitários e media queries.
+    - `main.scss`: Arquivo principal que importa todos os outros arquivos SASS.
 
 ## 🛠️ Como Rodar o Projeto
 

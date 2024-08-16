@@ -1,0 +1,55 @@
+@use "../global/typography";
+@use "../global/colors";
+@use "../util/queries";
+
+.footer {
+    background-color: map-get($map: colors.$theme-color, $key: --absolute-black);
+
+    &-container {
+        align-items          : center;
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+        gap                  : 100px;
+        padding              : 120px 20px 60px;
+
+        @include queries.devices-t-and-m() {
+            gap                  : 40px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-texto {
+        @include typography.typography-01(24);
+        color      : map-get($map: colors.$theme-color, $key: --silver-mist);
+        line-height: 1.4;
+    }
+
+    &-contato {
+        li {
+            margin-bottom: 30px;
+
+            a {
+                @include typography.typography-01(38);
+                color      : map-get($map: colors.$theme-color, $key: --pure-white);
+                font-weight: bolder;
+                line-height: 1.2;
+
+                &:hover {
+                    color     : map-get($map: colors.$theme-color, $key: --silver-mist);
+                    transition: .3s ease-in-out;
+                }
+
+                @include queries.devices-t-and-m() {
+                    @include typography.typography-01(24);
+                }
+            }
+
+        }
+    }
+
+    &-copy {
+        @include typography.typography-01(18);
+        color                : map-get($map: colors.$theme-color, $key: --stone-gray);
+        grid-template-columns: 1/-1;
+    }
+}

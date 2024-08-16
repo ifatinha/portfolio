@@ -11,8 +11,6 @@
     @include util.devices(t) {
         gap                  : 40px;
         grid-template-columns: 1fr 1fr;
-        margin-top           : 20px;
-        text-align           : center;
     }
 
     @include util.devices(m) {
@@ -28,12 +26,13 @@
 
     h1 {
         @include typography.typography-01(72);
+        font-weight  : 700;
         line-height  : 1.125;
         margin-bottom: 30px;
         position     : relative;
 
         @include util.devices-t-and-m() {
-            @include typography.typography-01(48);
+            @include typography.typography-01(38);
         }
 
         &::before {
@@ -47,14 +46,10 @@
             width     : 130px;
             z-index   : -1;
 
-            @include util.devices(t) {
+            @include util.devices-t-and-m() {
                 height: 10px;
                 left  : 0;
                 width : 30px;
-            }
-
-            @include util.devices(m) {
-                left: 180px;
             }
         }
     }

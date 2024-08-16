@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     padding  : 40px 2%;
 
-    @include util.devices(m) {
+    @include util.devices-t-and-m() {
         flex-direction: column;
         gap           : 30px;
         padding       : 20px 0;

@@ -14,16 +14,12 @@
 
         &::after {
             background: url("/assets/images/detalhe.svg") no-repeat center;
-            bottom    : +50px;
+            bottom    : -50px;
             content   : "";
             display   : block;
             height    : 100px;
             position  : absolute;
             width     : 130px;
-
-            @include queries.devices-t-and-m() {
-                bottom: -50px;
-            }
         }
 
         @include queries.devices-t-and-m() {
@@ -75,6 +71,7 @@
     &-curso {
         @include typography.typography-01(18);
         flex         : 1;
+        font-weight  : 700;
         line-height  : 1.4;
         margin-bottom: 40px;
         position     : relative;
